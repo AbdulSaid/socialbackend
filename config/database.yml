@@ -88,9 +88,4 @@ test:
 #
 production:
   <<: *default
-  database: socialbackend_production
-  username: test5
-  password: test5
-  host: localhost
-  port: 5432
-  url: <%= ENV['DBURI'] %>
+  url: <%= ENV['DATABASE_URL'] %>
